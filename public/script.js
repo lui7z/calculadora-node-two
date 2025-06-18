@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 operacao = 'subtracao';
             } if (botao.textContent === '*') {
                 operacao = 'multiplicacao';
+            } if (botao.textContent === '/') {
+                operacao = 'divisao';
             } else {
                 alert('Essa operação ainda não foi implementada!');
                 return;
