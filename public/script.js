@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             /* Copiar o IF abaixo para adição de novas Operações (Alterando o Símbolo e a Operação "Nome do Arquivo.js") */
             if (botao.textContent === '-') {
                 operacao = 'subtracao';
-            } if (botao.textContent === '*') {
+            } else if (botao.textContent === '*') {
                 operacao = 'multiplicacao';
-            } if (botao.textContent === '/') {
+            } else if (botao.textContent === '/') {
                 operacao = 'divisao';
             } else {
                 alert('Essa operação ainda não foi implementada!');

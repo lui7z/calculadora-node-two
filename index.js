@@ -39,10 +39,10 @@ app.post('/calcular', (req, res) => {
     if (operacao === 'subtracao') {
         resultado = subtrair(valor1, valor2);
         simbolo = '-';
-    } if(operacao === 'multiplicacao') {
+    } else if(operacao === 'multiplicacao') {
         resultado = multiplicar(valor1, valor2);
         simbolo = '*';
-    } if(operacao === 'divisao') {
+    } else if(operacao === 'divisao') {
         resultado = dividir(valor1, valor2);
         simbolo = '/';
     } else {
