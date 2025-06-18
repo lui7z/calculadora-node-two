@@ -1,0 +1,83 @@
+html{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container{
+    padding: 16px;
+    height: auto;
+    width: 520px;
+    background-color: rgb(128, 128, 128);
+    background: linear-gradient(0deg, #808080 0%, rgba(63, 63, 63, 1) 100%);
+    border-radius: 8px;
+}
+
+.border{
+    height: 720px;
+    border-radius: 8px;
+    border: 10px solid black;
+}
+
+.resultado{
+    display: flex;
+    justify-self: center;
+    justify-content: right;
+    align-items: center;
+    font-size: 44px;
+    padding: 20px;
+    background-color: rgb(167, 166, 166);
+    color: black;
+    border: 4px solid black;
+    width: 420px;
+    height: 80px;
+}
+
+.linha{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.op{
+    font-size: 50px;
+}
+
+input{
+    border-radius: 16px;
+    font-size: 50px;
+    width: 160px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 15px;
+    justify-content: center;
+}
+
+button{
+    border-radius: 16px;
+    font-size: 120px;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
