@@ -21,6 +21,7 @@ app.listen(3000, () => {
 /* Copiar o Código abaixo dando um nome a Constante e especificando o caminho da Operação (Arquivo.js) para importar novas Operações */
 
 const subtrair = require('./operacoes/subtracao');
+const multiplicar = require('./operacoes/mutiplicacao');
 
 /* ----------------------------------------------- */
 
@@ -38,6 +39,9 @@ app.post('/calcular', (req, res) => {
     if (operacao === 'subtracao') {
         resultado = subtrair(valor1, valor2);
         simbolo = '-';
+    } if(operacao === 'multiplicacao') {
+        resultado = multiplicar(valor1, valor2);
+        simbolo = '*';
     } else {
         return res.status(400).json({ erro: 'Operação não suportada' });
     }
