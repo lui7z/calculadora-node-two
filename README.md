@@ -25,4 +25,4 @@ node index.js
 ```
 Para rodar o Servidor Localmente
 
-E Então Pressione "CTRL + Botão Esquerdo do Mouse" no Link que irá ser exibido no Terminal para acessar a Página!
+Então Pressione "CTRL + Botão Esquerdo do Mouse" no Link que irá ser exibido no Terminal para acessar a Página!
