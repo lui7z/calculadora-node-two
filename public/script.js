@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let operacao = '';
 
             /* IF Responsável por chamar a Operação correspondente ao Botão de Subtração */
-            /* Copiar o IF abaixo para adição de novas Operações (alterando a Operação "Nome do Arquivo.js") */
+            /* Copiar o IF abaixo para adição de novas Operações (Alterando o Símbolo e a Operação "Nome do Arquivo.js") */
             if (botao.textContent === '-') {
                 operacao = 'subtracao';
             } else {
