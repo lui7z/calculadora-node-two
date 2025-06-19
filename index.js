@@ -11,10 +11,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-app.listen(3000, () => {
-    console.log('Server running on http://localhost:3000');
-});
-
 /* ------------------------------------------------------------------- */
 
 /* ---------------Importar Operações-------------- */
@@ -23,6 +19,7 @@ app.listen(3000, () => {
 const subtrair = require('./operacoes/subtracao');
 const multiplicar = require('./operacoes/mutiplicacao');
 const dividir = require('./operacoes/divisao');
+const adcao = require('./operacoes/adcao');
 /* ----------------------------------------------- */
 
 /* -------------------------Lógica das Funções------------------------ */
@@ -45,7 +42,11 @@ app.post('/calcular', (req, res) => {
     } else if(operacao === 'divisao') {
         resultado = dividir(valor1, valor2);
         simbolo = '/';
-    } else {
+    } else if(operacao === 'adcao'){
+        resultado = adcao(valor1, valor2);
+        simbolo = '+'
+    }
+    else {
         return res.status(400).json({ erro: 'Operação não suportada' });
     }
     
@@ -55,3 +56,7 @@ app.post('/calcular', (req, res) => {
 });
 
 /* ------------------------------------------------------------------- */
+
+app.listen(3000, () => {
+    console.log('Server running on http://localhost:3000');
+});

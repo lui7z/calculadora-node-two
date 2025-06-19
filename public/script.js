@@ -30,7 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 operacao = 'multiplicacao';
             } else if (botao.textContent === '/') {
                 operacao = 'divisao';
-            } else {
+            } else if(botao.textContent === '+'){
+                operacao = 'adcao'
+            }
+            else {
                 alert('Essa operação ainda não foi implementada!');
                 return;
             }
