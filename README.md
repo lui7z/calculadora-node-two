@@ -10,6 +10,12 @@ Nesta Aplicação desenvolvida em Grupo, foram adicionados Colaboradores, para q
 |:--:|:--:|:--:|:--:|
 | Luiz | Marcos | Aydom | Robério |
 
+## O Que será Necessário?
+
+- Git Bash
+- VSCode
+- Node.Js
+  
 ## Como Rodar a Aplicação
 
 - Clone o Repositório 
